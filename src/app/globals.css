@@ -1,3 +1,5 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,11 +19,31 @@
 }
 
 body {
+  background-color: #2e3035 !important;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust the gap between items as per your needs */
+}
+.text {
+  color: lightgray;
+}
+.check {
+  background-color: #2e2000;
+}
+.card {
+  display: flex;
 }

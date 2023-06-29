@@ -1,4 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+/** @format */
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: ["rickandmortyapi.com"],
+  },
+};
